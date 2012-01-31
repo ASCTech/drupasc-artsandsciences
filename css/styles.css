@@ -1,0 +1,419 @@
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+/*-------Typography and General Styling-------*/
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border-color:#dedac1;	
+}
+
+td {
+	padding:5px;
+}
+
+img { 
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul,li {
+	list-style:square;	
+}
+
+caption,th {
+	text-align:left;
+}
+
+h1,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+abbr,acronym {
+	border:0;
+}
+
+body{
+	background:#FFFFFF none repeat scroll 0 0;
+	height:100%;
+	font-family: "Lucida Grande",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding:5px;
+}
+body.grey{
+	background:#CCCCCC none repeat scroll 0 0;
+	padding:0;
+}
+
+a {	
+	line-height: 15px;
+	margin: 0;
+	color: #990000;
+}
+
+p {
+	font-family: "Lucida Grande",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+h1{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 125%;
+	font-weight: bold;
+	line-height: 15px;
+	margin-bottom:5px;
+	margin-top:5px;	
+	color: #000000;
+}
+
+h2{
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 105%;
+	font-weight:bold;
+	line-height: 15px;
+	margin-bottom:5px;
+	margin-top:5px;	
+	color: #990000;
+}
+
+h3{
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	line-height: 15px;
+	margin-bottom:5px;
+	margin-top:5px;	
+	color: #000000;
+}
+
+h4{
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	line-height: 15px;
+	margin-bottom:5px;
+	margin-top:5px;	
+	color: #000000;
+}
+
+/*-------Top of Page Layout-------*/
+#mainContainer{
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 1005px;
+	height: 100%;
+	clear:both;
+	background-color:#FFFFFF;
+}
+
+#titleBar{
+	margin: 0 0 0 20px;
+	height: 55px;
+}
+
+#titleBar_buttons{
+	margin-bottom: 25px;
+	margin-right: 25px;
+	float: right;
+	width: auto;
+	height: auto;
+	color: #CCCCCC;
+}
+	
+#titleBar_buttons a{
+	margin: 0px;
+	color: #990000;
+	text-decoration: none;
+}
+
+#titleBar_buttons li + li{
+	border-left: 1px solid #CCCCCC;
+}
+
+
+/*-------Header and Main Nav-------*/
+#header{
+	margin: 0 auto 15px auto;
+	width: 945px;
+	height: 255px;
+	background: #999999;
+}
+
+#mainNav{
+	margin: 0 auto 0 auto;
+	padding-top: 10px;
+	width: 945px;
+	height: 35px;
+	text-align: center;
+	border-top: 1px dotted #CCCCCC;
+	border-bottom: 1px dotted #CCCCCC;
+	color: #CCCCCC;
+}
+
+#mainNav ul{
+	text-align: center;
+}
+	
+#mainNav li.leaf a{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 17px;
+	text-decoration: none;
+	color: #666666;
+}
+	
+#mainNav a:hover{
+	color: #990000;
+}
+
+#mainNav li + li{
+	border-left: 1px solid #888888;
+}
+
+#mainNav li.leaf {
+	display: inline;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0 0.5em;
+}
+
+/*-------Content Styling-------*/
+
+.main-content img{
+	margin: 5px;
+}
+
+
+/*-------Footer Styling-------*/
+	
+#footer{
+	margin: 15px auto 0 300px;
+	padding-top: 15px;
+	min-height: 85px;
+	width: 705px;
+	float: left;
+	background: url(../images/asc_logo.png) top left no-repeat;
+	}
+
+
+#footerContainer{
+	margin: 25px 0 0 0;
+	padding: 55px 0 5px 0;
+	width: 100%;
+	min-height: 85px;
+	background:#CCCCCC url(../images/block_smaller.gif) top center repeat-x ;
+}
+	
+#footer_content{
+	margin: 0 auto ;
+	padding: 0;
+	width: 1005px;
+	min-height: 85px;	
+	background:#CCCCCC url(../images/asc_logo.png) top left no-repeat;
+	clear:both;
+}
+
+#footer_address{
+	margin-left: 650px ;
+}
+
+#footer_address p {
+	font-size:10px;
+	line-height:12px;
+}
+
+#footer_address a {
+	font-size:10px;
+	line-height:12px;
+}
+
+
+/*-------Columns Formatting (used for paragraphs or image containers)-------*/
+
+#columnsContainer{
+	margin: 0 auto 0 auto;
+	padding-top: 15px;
+	width: 945px;
+	height: auto;
+}
+
+.fiveWide{
+	width: 760px;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.fourWide{
+	width: 605px;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+	
+.threeWide{
+	width: 450px;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+	
+.twoWide{
+	width: 295px;
+	height: auto;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+	
+.oneWide{
+	width: 140px;
+	height: auto;
+	float: right;	
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.left {
+	float: left;
+}
+
+/* Side Nav Styling */
+
+#sidenav{
+	height: auto;
+	background: #f3f0df;
+	font-family: "Lucida Grande", Verdana, Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#sidenav h2{
+	padding: 10px;
+}
+
+#sidenav li{
+	display: block;
+	height: auto;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#sidenav a{
+	text-decoration: none;	
+}
+
+#sidenav li > ul li a {
+	color: #6F6F37;
+	text-decoration: none;
+	font-family: "Lucida Grande",Verdana, Georgia, "Times New Roman", Times, serif;
+}
+
+#sidenav li + li {
+	border-top: 1px dotted #b4ae8d;
+}
+
+#sidenav li .first {
+	border-top: 1px dotted #b4ae8d;	
+}
+
+#sidenav li a:hover{
+	color: #990000;
+	text-decoration: none;
+}
+
+#sidenav .active {
+	background:#dedac1;
+	color: #990000;
+	text-decoration: none;
+}
+
+li .active{
+	background-color:#f3f0df;
+	font-family: "Lucida Grande",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* twowide sidebars */
+.twoWide #miscContent{
+	margin: 0;
+	float: right;
+	width: 255px;
+	padding: 20px;
+	height: auto;
+	background: #dedac1;
+}
+
+.twoWide #menuimage img{
+	margin: 0;
+	padding: 10px;
+	width: 235px;
+	height: auto;
+	background: #FFFFFF;
+}
+
+/* onewide sidebars */
+.oneWide #miscContent{
+	margin: 0;
+	float: right;
+	width: 120px;
+	padding: 10px;
+	height: auto;
+	background: #dedac1;
+}
+
+.oneWide #menuimage img{
+	margin: 0;
+	padding: 10px;
+	width: 100px;
+	height: auto;
+	background: #FFFFFF;
+}
+
+#sidenav.oneWide ul {
+	padding: 0;
+	margin: 5px;
+}
+
+#sidenav.oneWide li {
+	padding: 0px;
+	margin: 3px 1px 3px 10px;
+}
+
+/* addition for webforms fieldset legends (titles) */
+
+fieldset.webform-component-fieldset legend {
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;
+	font-size: 105%;
+	font-weight:bold;
+	line-height: 15px;
+	margin-bottom:5px;
+	margin-top:5px;	
+	color: #990000;
+
+	padding-left: 0px;
+	margin-left: 0px;
+}

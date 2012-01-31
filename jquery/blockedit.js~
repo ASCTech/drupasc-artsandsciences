@@ -1,0 +1,12 @@
+$(document).ready(function(){
+   // Your code here
+	$(".block-tabs-wrapper").hide();
+	//$(".content").hover(function() {
+	//$(".block-tabs-wrapper").show();
+	//});
+
+
+ });
+ function showeditblocktab(blockid) {
+  				$("#tabblock-<?php print blockid;?>").show();
+  			}
